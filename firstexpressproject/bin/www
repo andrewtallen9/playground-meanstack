@@ -1,0 +1,19 @@
+// no extension for this file!
+// this file sets up the webserver and includes our middleware
+
+var app = require('../app');
+var http = require('http');
+
+var port = 8080;
+
+// tell express what port we are using
+app.set('port',port);
+
+// pass the createServer a request handler, which is our express object
+var server = http.createServer(app);
+
+server.listen(port);
+// using the listening event (through the http module) to call a function when the event happens
+server.on('listening', () => {
+    console.log('Listening on %s', server.address());
+});

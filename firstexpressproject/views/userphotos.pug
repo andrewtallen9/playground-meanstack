@@ -1,0 +1,12 @@
+h4 My Photos
+
+.row
+ .col-sm-4
+  p Title: #{photo.title}
+  p Descriptions: #{photo.description}
+
+.row
+  each photo in photos
+    .col-sm-4
+      p Title: #{photo.title}
+      p Descriptions: #{photo.description}

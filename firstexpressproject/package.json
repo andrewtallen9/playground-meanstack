@@ -1,0 +1,17 @@
+{
+  "name": "firstexpressproject",
+  "version": "0.0.1",
+  "description": "Andrew's First Express Project!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www",
+    "start-dev": "nodemon --inspect bin/www"
+  },
+  "author": "Andrew Allen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}
