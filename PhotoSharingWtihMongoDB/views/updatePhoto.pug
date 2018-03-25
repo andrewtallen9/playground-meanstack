@@ -1,0 +1,18 @@
+.row
+ .col-md-6.col-md-offset-3
+  p Title: #{photo.title}
+  p Descriptions: #{photo.description}
+  p Size: #{photo.size} | Filename: #{photo.originalname} | Uploaded: #{photo.createdAt}
+  img(src=photo.imageurl, width="250")
+  if flashMsg.length > 0
+   .alert.alert-danger <strong>FLASH!</strong>#{flashMsg}
+  form(method='POST' action='/photos/'+photo._id)
+   div.form-group
+    label(for='name') Photo Title:
+    input#name.form-control(type='text', value=photo.title name='title')
+   div.form-group
+    label(for='email') Description:
+    input#email.form-control(type='text', value=photo.description name='description')
+   .form-group
+    input#name.form-control(type='hidden', name='_id' value=photo._id)
+   button.btn.btn-primary(type='submit') Update Your Photo Information
