@@ -39,9 +39,9 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 // the most common are get, post, put, and delete
 // ORDER OF THE .get MATTERS
 //  get - enter a URL
-app.get('/', (req, res) => {
-    res.end('root requested');
-});
+//app.get('/', (req, res) => {
+//    res.end('root requested');
+//});
 
 /* Doing routing in app.js - not the best
 
@@ -78,7 +78,7 @@ app.get('/photos/:photoid', (req,res) => {
 
 // lets route using the MVC model with a routes folder
 // anything with the users path will use the users module/router
-app.use('/users', users);
+//app.use('/users', users);
 
 // error handler middleware that will be a redirect
 app.use((req, res, next) => {

@@ -1,0 +1,22 @@
+{
+  "name": "getvspost",
+  "version": "0.0.1",
+  "description": "Get vs Post!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www",
+    "start-dev": "nodemon --inspect bin/www"
+  },
+  "author": "Andrew Allen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}
